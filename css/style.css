@@ -61,7 +61,12 @@ img {
     border-radius: 4px;
     color: #FFFFFF;
 }
-
+.effects-transition:hover,
+.effects-transition:focus {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* ======END COMPONENTS====== */
 
 
@@ -263,7 +268,23 @@ img {
 .picture-item:not(:last-child) {
     margin-right: 30px;
 }
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+.thumb > .label {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    top: 224px;
+    margin: 0;
+    background: rgba(47, 48, 58, 0.8);
 
+    color: #FFFFFF;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-top: 27px;
+}
 /*TEAM*/
 .team-background {
     background: #F5F4FA;
