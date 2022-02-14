@@ -23,7 +23,7 @@
         </a>
         <nav class="navigation">
             <ul class="navigation-list list">
-                <li class="navigation-link agencja-underline">
+                <li class="navigation-link agency-underline">
                     <a class="navigation-list-menu link effects-transition"
                        href="/goit-markup-hw-05/index.html">Agencja</a>
                 </li>
@@ -65,7 +65,7 @@
             <!--Sekcja HERO-->
             <div id="hero" class="banner-content">
                 <h1 class="main-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button class="modal-btn" type="button" data-modal-open>Zamów usługe</button>
+                <button class="modal-btn" type="button" data-modal-open>Zamów usługę</button>
             </div>
         </div>
     </section>
@@ -439,10 +439,14 @@
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <!--        <button type="button" class="close-btn" data-modal-close>x</button>-->
-        <button type="button" class="close-btn" data-modal-close>x</button>
+        <button type="button" class="close-btn" data-modal-close>
+            <svg width="11px" height="11px">
+                <use href="images/icons.svg#icon-close-black"></use>
+            </svg>
+        </button>
     </div>
 </div>
+
 <script src="./js/modal.js"></script>
 </body>
 </html>

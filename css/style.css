@@ -65,7 +65,7 @@ img {
 .effects-transition:hover,
 .effects-transition:focus {
     transition-property: color;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -96,7 +96,7 @@ img {
     position: relative;
 }
 
-.agencja-underline::after {
+.agency-underline::after {
     position: absolute;
     display: block;
     content: "";
@@ -166,6 +166,9 @@ img {
 
 .contact-items:hover > * {
     color: var(--secondary-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .navigation-data {
@@ -402,7 +405,7 @@ img {
 .social-list-link:focus {
     background-color: var(--secondary-color);
     transition-property: background-color;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -489,7 +492,7 @@ img {
 .background-icons-footer:focus {
     background-color: var(--secondary-color);
     transition-property: background-color;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -560,12 +563,17 @@ img {
 .logo-border:hover > .logo-links {
     color: var(--secondary-color);
     cursor: pointer;
-
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-border:hover {
     border-color: var(--secondary-color);
     cursor: pointer;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container .filter {
@@ -615,6 +623,32 @@ img {
 .projects-portfolio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-up {
+    bottom: -100%;
+    position: absolute;
+    background: #2196F3;
+    opacity: 0.9;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    padding: 31px 45px 31px 24px;
+    color: #FFFFFF;
+
+}
+
+.projects-portfolio-list:hover .slide-up {
+    bottom: 0;
+    height: 100%;
+    transition-property: bottom;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-portfolio-list {
