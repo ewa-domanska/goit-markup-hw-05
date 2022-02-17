@@ -116,15 +116,6 @@ img {
     background-image: url(../images/underline58px.svg);
 }
 
-/*.kontakt-underline::after{*/
-/*    position:absolute;*/
-/*    display: block;*/
-/*    content:"";*/
-
-/*    height: 4px;*/
-/*    top: 46px;*/
-/*    background-image: url(../images/underline53px.svg);*/
-/*}*/
 .studio-color {
     text-decoration: none;
     font-family: var(--secondary-font);
@@ -687,6 +678,16 @@ img {
     top: 0;
     width: 100%;
     height: 100%;
+    opacity: 1;
+    pointer-events: all;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal {
@@ -697,12 +698,6 @@ img {
     width: 528px;
     min-height: 581px;
     background-color: #FFFFFF;
-}
-
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
 }
 
 .close-btn {
